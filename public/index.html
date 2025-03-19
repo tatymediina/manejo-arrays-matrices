@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Personas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Personas</h1>
+
+        <div class="form-container">
+            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="number" id="edad" placeholder="Edad">
+            <input type="number" id="nota" placeholder="Nota">
+            <button onclick="agregarPersona()">Agregar</button>
+        </div>
+
+        <div class="actions">
+            <button onclick="obtenerPersonas()">Mostrar Lista</button>
+            <button onclick="obtenerPersonasOrdenadas()">Ordenar por Nota</button>
+        </div>
+
+        <div class="list-container">
+            <h2>Lista de Personas:</h2>
+            <ul id="lista" class="person-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
